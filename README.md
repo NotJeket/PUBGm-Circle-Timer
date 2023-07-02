@@ -33,12 +33,14 @@ python your_program_file.py
 
 **Screenshot**
 
-Insert the program's screenshot here.
+![image](https://github.com/NotJeket/PUBGm-Circle-Timer/assets/37781149/6a5b2243-2cc0-4f35-adab-5cad5b5daf87)
+
 
 **Flowchart**
 
-Insert the program's flowchart image here.
+![image](https://github.com/NotJeket/PUBGm-Circle-Timer/assets/37781149/39061206-be10-4d36-ab86-6aa3767ef634)
+
 
 **License**
 
-This project is licensed under the MIT License. See the [LICENSE]() file for details.
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/NotJeket/PUBGm-Circle-Timer/blob/main/LICENSE) file for details.
