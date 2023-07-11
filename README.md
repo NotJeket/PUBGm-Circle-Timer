@@ -31,11 +31,11 @@ python your_program_file.py
 -   Dash
 -   Requests
 
-**Flowchart**
-
-![image](https://github.com/NotJeket/PUBGm-Circle-Timer/assets/37781149/6a5b2243-2cc0-4f35-adab-5cad5b5daf87)
-
 **Screenshot**
+
+[![image](https://github.com/NotJeket/PUBGm-Circle-Timer/assets/37781149/6a5b2243-2cc0-4f35-adab-5cad5b5daf87)](https://github.com/NotJeket/PUBGm-Circle-Timer/issues/1#issue-1784611145)
+
+**Flowchart**
 
 ![code2flow_Tg9kfl](https://github.com/NotJeket/PUBGm-Circle-Timer/assets/37781149/a47dc74a-3070-49d9-953d-649d7e483b54)
 
