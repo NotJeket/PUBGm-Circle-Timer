@@ -37,7 +37,8 @@ python your_program_file.py
 
 **Screenshot**
 
-![image](https://github.com/NotJeket/PUBGm-Circle-Timer/assets/37781149/39061206-be10-4d36-ab86-6aa3767ef634)
+![code2flow_Tg9kfl](https://github.com/NotJeket/PUBGm-Circle-Timer/assets/37781149/a47dc74a-3070-49d9-953d-649d7e483b54)
+
 
 
 **License**
