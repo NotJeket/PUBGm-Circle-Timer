@@ -1,0 +1,190 @@
+@font-face {
+    font-family: 'Arame Mono Bold';
+    src: url('Arame Mono Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.reveal-container {
+  position: relative;
+  overflow: visible; /* So the pseudo-element does not go outside the boundaries */
+  /* ...your other styles... */
+}
+
+.reveal-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:/* color of your choice */;
+  animation: reveal 3s linear forwards; /* Modify the duration and easing as needed */
+  z-index: 2;
+}
+
+@keyframes reveal {
+  0% {
+    width: 100%;
+  }
+  50% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+
+
+
+.timer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  margin-top: 200px;
+}
+
+.timer-bar-wrapper {
+  position: relative;
+  transform: skew(0deg) scaleX(-1);  /* Add scaleX(-1) */
+  width: 400px;
+  height: 50px;
+  overflow: hidden;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.timer-bar-wrapper.mirrored {
+  transform: skew(-0deg) ;
+}
+
+.timer-bar {
+  position: relative;
+  background-color: #ffffff;
+  width: 500px;
+  height: 50px;
+  font-family: Arame Mono Bold;
+  overflow: hidden;
+  transform: scaleX(-1);  /* Add scaleX(-1) */
+
+}
+
+.timer-bar, .timer-bar.mirrored {
+  transition: width 1s linear;
+}
+
+
+.timer-bar.mirrored {
+  transform:  skew(-30deg);
+}
+
+.timer-bar:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFFF;
+  z-index: 0;
+  transform: scaleX(-1);
+}
+
+.timer-bar:after {
+  content: none; /* Remove the content property */
+  color: transparent; /* Make the text transparent */
+}
+
+
+.overlay-text-1 {
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%) scaleX(-1) skew(-0deg);
+  color: #004066;
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px black;
+  z-index: 2;
+  font-family: Arame Mono Bold;
+}
+
+.overlay-text-2 {
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) skew(-0deg) scaleX(-1);
+  color: #004066;
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px black;
+  z-index: 2;
+  font-family: Arame Mono Bold;
+
+}
+
+.timer-bar-wrapper.mirrored .overlay-text-2 {
+  transform: translate(-50%, -50%) skew(0deg) ;
+}
+
+.timer {
+  width: 80px; /* Adjust width as needed */
+  height: 75px; /* Adjust height as needed */
+  /* border-left: 65px solid transparent; */
+  /* border-right: 65px solid transparent; */
+  /* border-top: 90px solid #004066; */
+  background-color: #004066; /* Use a background color instead of border */
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  color: #FFFFFF; /* Make sure this color contrasts with the background */
+  text-shadow: 1px 1px 2px #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  font-family: Arame Mono Bold;
+}
+
+
+.timer-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  /* bottom: 45px; */
+  font-family: Arame Mono Bold;
+
+}
+
+
+
+.timer-milliseconds {
+  font-size: 24px;
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+}
+
+
+
+@keyframes load {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+  }
+}
